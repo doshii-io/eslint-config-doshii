@@ -1,19 +1,32 @@
 {
   "name": "eslint-config-doshii",
   "description": "JavaScript Styling ESLint config for Doshii",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "author": {
     "name": "Doshii Connect Pty Ltd.",
-    "email": "mo.kargas@doshii.io",
+    "email": "john.twomey@doshii.io",
     "url": "https://doshii.io"
   },
   "contributors": [
-    "Mo Kargas <mo.kargas@doshii.io> (https://doshii.io)"
+    "Mo Kargas <mo.kargas@doshii.io> (https://doshii.io)",
+    "Katie Boland <katie.boland@doshii.io> (https://doshii.io)",
+    "John Twomey <john.twomey@doshii.io> (https://doshii.io)",
+    "Julia Tonkonogova <julia.tonkonogova@doshii.io> (https://doshii.io)",
+    "Phillip William <phillip.william@doshii.io> (https://doshii.io)"
   ],
   "bugs": {
     "url": "https://github.com/doshii-io/eslint-config-doshii/issues"
   },
   "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/plugin-transform-arrow-functions": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
@@ -28,6 +41,7 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^1.7.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-webpack-plugin": "^3.0.1",
     "prettier": "^2.2.1",
     "stylelint": "^13.12.0",
     "stylelint-config-css-modules": "^2.2.0",
@@ -39,7 +53,7 @@
   "peerDependencies": {
     "eslint": "^7.24.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.5"
   },
   "homepage": "https://github.com/doshii-io/eslint-config-doshii",
   "keywords": [
@@ -81,6 +95,5 @@
   },
   "scripts": {
     "lint": "eslint ."
-  },
-  "devDependencies": {}
+  }
 }
