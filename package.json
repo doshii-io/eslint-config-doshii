@@ -1,18 +1,17 @@
 {
   "name": "eslint-config-doshii",
   "description": "JavaScript Styling ESLint config for Doshii",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "author": {
     "name": "Doshii Connect Pty Ltd.",
     "email": "john.twomey@doshii.io",
     "url": "https://doshii.io"
   },
   "contributors": [
-    "Mo Kargas <mo.kargas@doshii.io> (https://doshii.io)",
-    "Katie Boland <katie.boland@doshii.io> (https://doshii.io)",
     "John Twomey <john.twomey@doshii.io> (https://doshii.io)",
     "Julia Tonkonogova <julia.tonkonogova@doshii.io> (https://doshii.io)",
-    "Phillip William <phillip.william@doshii.io> (https://doshii.io)"
+    "Phillip William <phillip.william@doshii.io> (https://doshii.io)",
+    "Sverre Kvaale <sverre.kvaale@doshii.io> (https://doshii.io)"
   ],
   "bugs": {
     "url": "https://github.com/doshii-io/eslint-config-doshii/issues"
