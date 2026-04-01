@@ -1,0 +1,20 @@
+name: "DevSecOps Scans"
+run-name: "DevSecOps Scans: ${{ github.event.head.ref || github.ref_name }}"
+
+on:
+  pull_request:
+  push:
+    branches: [ main, master, develop, release* ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  devsecops:
+    uses: doshii-io/doshii-cicd/.github/workflows/x15.devsecops.yml@v1.3.2
+    secrets:
+      token: ${{ secrets.GH_ACTIONS_TOKEN }}
+      wiz-client-id: ${{ secrets.WIZ_CLIENT_ID }}
+      wiz-client-secret: ${{ secrets.WIZ_CLIENT_SECRET }}

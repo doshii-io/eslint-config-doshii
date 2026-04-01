@@ -1,0 +1,8 @@
+# Control default approvers/code owners for different parts of the repo
+
+# Require devops for any IaC or CICD changes
+cicd       @doshii-io/doshii-devops
+terraform  @doshii-io/doshii-devops
+terragrunt @doshii-io/doshii-devops
+.github/actions    @doshii-io/doshii-devops
+.github/workflows    @doshii-io/doshii-devops
